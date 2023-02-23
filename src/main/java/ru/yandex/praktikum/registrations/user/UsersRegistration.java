@@ -7,7 +7,6 @@ import ru.yandex.praktikum.registrations.Registration;
 import static io.restassured.RestAssured.given;
 import static ru.yandex.praktikum.Endpoints.*;
 
-
 public class UsersRegistration {
     @Step("Зарегистрировать профиль пользователя")
     public ValidatableResponse userRegistration(Registration user) {

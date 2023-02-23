@@ -16,14 +16,12 @@ public class RegistrationUserTest {
     UsersRegistration usersRegistration = new UsersRegistration();
     AssertsRegistrations assertsRegistrations = new AssertsRegistrations();
     AuthUsers authUsers = new AuthUsers();
-    ValidatableResponse authRandomUser;
-    ValidatableResponse creatingUser;
-    ValidatableResponse creatingBaseUser;
-    ValidatableResponse creatingUserAlreadyExists;
-    Authentication authUserData;
-    String userToken;
-    String randomUserEmail;
-
+    private ValidatableResponse authRandomUser;
+    private ValidatableResponse creatingUser;
+    private ValidatableResponse creatingBaseUser;
+    private Authentication authUserData;
+    private String userToken;
+    private String randomUserEmail;
 
     @Test
     @DisplayName("Регистрация уникального пользователя")

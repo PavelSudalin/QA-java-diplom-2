@@ -1,11 +1,10 @@
-package ru.yandex.praktikum.orders.getOrders;
+package ru.yandex.praktikum.orders.getorders;
 
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
 import static ru.yandex.praktikum.Endpoints.*;
-
 
 public class GetOrders {
 

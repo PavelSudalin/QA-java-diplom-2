@@ -10,8 +10,8 @@ import ru.yandex.praktikum.auth.Authentication;
 import ru.yandex.praktikum.auth.user.AuthUsers;
 import ru.yandex.praktikum.helper.OrdersData;
 import ru.yandex.praktikum.helper.UserData;
-import ru.yandex.praktikum.orders.creatingOrders.CreateOrder;
-import ru.yandex.praktikum.orders.getOrders.GetOrders;
+import ru.yandex.praktikum.orders.creatingorders.CreateOrder;
+import ru.yandex.praktikum.orders.getorders.GetOrders;
 import ru.yandex.praktikum.registrations.user.UsersRegistration;
 
 @DisplayName("Проверка получения заказов пользователя")
@@ -23,14 +23,12 @@ public class GetOrdersTest {
     UsersRegistration usersRegistration = new UsersRegistration();
     UserData userData = new UserData();
     OrdersData ordersData = new OrdersData();
-
-    ValidatableResponse creatingUser;
-    ValidatableResponse authRandomUser;
-    ValidatableResponse getOrdersForUser;
-
-    Authentication authUserData;
-    String userToken;
-    String randomUserEmail;
+    private ValidatableResponse creatingUser;
+    private ValidatableResponse authRandomUser;
+    private ValidatableResponse getOrdersForUser;
+    private Authentication authUserData;
+    private String userToken;
+    private String randomUserEmail;
 
     @Before
     public void creatingTestUser() {

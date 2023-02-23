@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.orders.creatingOrders;
+package ru.yandex.praktikum.orders.creatingorders;
 
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
@@ -8,9 +8,7 @@ import static io.restassured.RestAssured.given;
 import static ru.yandex.praktikum.Endpoints.BASE_URL;
 import static ru.yandex.praktikum.Endpoints.ORDERS;
 
-
 public class CreateOrder {
-
     @Step("Создать заказ")
     public ValidatableResponse creatingOrder(Orders orders) {
         return given()

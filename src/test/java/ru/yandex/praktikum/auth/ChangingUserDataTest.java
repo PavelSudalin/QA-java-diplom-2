@@ -18,12 +18,12 @@ public class ChangingUserDataTest {
     UsersRegistration usersRegistration = new UsersRegistration();
     AssertsAuth assertsAuth = new AssertsAuth();
     UserData userData = new UserData();
-    ValidatableResponse creatingUser;
-    ValidatableResponse updateUserData;
-    Authentication authUserData;
-    ValidatableResponse authRandomUser;
-    String userToken;
-    String randomUserEmail;
+    private ValidatableResponse creatingUser;
+    private ValidatableResponse updateUserData;
+    private Authentication authUserData;
+    private ValidatableResponse authRandomUser;
+    private String userToken;
+    private String randomUserEmail;
 
     @Before
     public void creatingTestUser() {

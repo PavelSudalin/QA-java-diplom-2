@@ -10,7 +10,7 @@ import ru.yandex.praktikum.auth.Authentication;
 import ru.yandex.praktikum.auth.user.AuthUsers;
 import ru.yandex.praktikum.helper.OrdersData;
 import ru.yandex.praktikum.helper.UserData;
-import ru.yandex.praktikum.orders.creatingOrders.CreateOrder;
+import ru.yandex.praktikum.orders.creatingorders.CreateOrder;
 import ru.yandex.praktikum.registrations.user.UsersRegistration;
 
 @DisplayName("Проверка создания заказов")
@@ -19,17 +19,14 @@ public class CreateOrderTest {
     AssertsOrders assertsOrders = new AssertsOrders();
     OrdersData ordersData = new OrdersData();
     AuthUsers authUsers = new AuthUsers();
-
     UsersRegistration usersRegistration = new UsersRegistration();
     UserData userData = new UserData();
-    ValidatableResponse creatingUser;
-    ValidatableResponse creatingOrderUser;
-    ValidatableResponse authRandomUser;
-
-    Authentication authUserData;
-    String userToken;
-    String randomUserEmail;
-
+    private ValidatableResponse creatingUser;
+    private ValidatableResponse creatingOrderUser;
+    private ValidatableResponse authRandomUser;
+    private Authentication authUserData;
+    private String userToken;
+    private String randomUserEmail;
 
     @Before
     public void creatingTestUser() {

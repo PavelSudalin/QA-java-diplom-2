@@ -6,7 +6,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 
-
 public class AssertsOrders {
     public void creatingOrderWithAuthorized(ValidatableResponse response) {
         response.assertThat()
