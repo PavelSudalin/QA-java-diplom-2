@@ -5,7 +5,6 @@ import io.restassured.response.ValidatableResponse;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 
-
 public class AssertsRegistrations {
 
     public void successfulCreation(ValidatableResponse response) {

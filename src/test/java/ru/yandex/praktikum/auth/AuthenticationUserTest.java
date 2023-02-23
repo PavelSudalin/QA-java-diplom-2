@@ -9,15 +9,16 @@ import ru.yandex.praktikum.helper.UserData;
 import ru.yandex.praktikum.registrations.user.UsersRegistration;
 
 import static ru.yandex.praktikum.helper.UserData.*;
+
 @DisplayName("Проверка аутентификации")
 public class AuthenticationUserTest {
     AuthUsers authUsers = new AuthUsers();
     AssertsAuth assertsAuth = new AssertsAuth();
     static UserData userData = new UserData();
     static UsersRegistration usersRegistration = new UsersRegistration();
-    static ValidatableResponse authBaseUser;
-    Authentication auth;
-    static String userToken;
+    private static ValidatableResponse authBaseUser;
+    private Authentication auth;
+    private static String userToken;
 
     @BeforeClass
     public static void creatBaseUser() {
