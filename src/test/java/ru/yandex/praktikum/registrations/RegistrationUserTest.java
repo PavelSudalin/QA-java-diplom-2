@@ -12,10 +12,10 @@ import ru.yandex.praktikum.registrations.user.UsersRegistration;
 
 @DisplayName("Проверка создания пользователя")
 public class RegistrationUserTest {
-    UserData userData = new UserData();
-    UsersRegistration usersRegistration = new UsersRegistration();
-    AssertsRegistrations assertsRegistrations = new AssertsRegistrations();
-    AuthUsers authUsers = new AuthUsers();
+    private final UserData userData = new UserData();
+    private final UsersRegistration usersRegistration = new UsersRegistration();
+    private final AssertsRegistrations assertsRegistrations = new AssertsRegistrations();
+    private final AuthUsers authUsers = new AuthUsers();
     private ValidatableResponse authRandomUser;
     private ValidatableResponse creatingUser;
     private ValidatableResponse creatingBaseUser;

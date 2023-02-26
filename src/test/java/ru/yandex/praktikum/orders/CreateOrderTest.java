@@ -15,12 +15,12 @@ import ru.yandex.praktikum.registrations.user.UsersRegistration;
 
 @DisplayName("Проверка создания заказов")
 public class CreateOrderTest {
-    CreateOrder createOrder = new CreateOrder();
-    AssertsOrders assertsOrders = new AssertsOrders();
-    OrdersData ordersData = new OrdersData();
-    AuthUsers authUsers = new AuthUsers();
-    UsersRegistration usersRegistration = new UsersRegistration();
-    UserData userData = new UserData();
+    private final CreateOrder createOrder = new CreateOrder();
+    private final AssertsOrders assertsOrders = new AssertsOrders();
+    private final OrdersData ordersData = new OrdersData();
+    private final AuthUsers authUsers = new AuthUsers();
+    private final UsersRegistration usersRegistration = new UsersRegistration();
+    private final UserData userData = new UserData();
     private ValidatableResponse creatingUser;
     private ValidatableResponse creatingOrderUser;
     private ValidatableResponse authRandomUser;

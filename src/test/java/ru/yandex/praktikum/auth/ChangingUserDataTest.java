@@ -13,11 +13,11 @@ import ru.yandex.praktikum.registrations.user.UsersRegistration;
 
 @DisplayName("Проверка изменение данных пользователя")
 public class ChangingUserDataTest {
-    UpdateUsers updateUsers = new UpdateUsers();
-    AuthUsers authUsers = new AuthUsers();
-    UsersRegistration usersRegistration = new UsersRegistration();
-    AssertsAuth assertsAuth = new AssertsAuth();
-    UserData userData = new UserData();
+    private final UpdateUsers updateUsers = new UpdateUsers();
+    private final AuthUsers authUsers = new AuthUsers();
+    private final UsersRegistration usersRegistration = new UsersRegistration();
+    private final AssertsAuth assertsAuth = new AssertsAuth();
+    private final UserData userData = new UserData();
     private ValidatableResponse creatingUser;
     private ValidatableResponse updateUserData;
     private Authentication authUserData;

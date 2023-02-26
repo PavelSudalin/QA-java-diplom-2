@@ -12,10 +12,10 @@ import static ru.yandex.praktikum.helper.UserData.*;
 
 @DisplayName("Проверка аутентификации")
 public class AuthenticationUserTest {
-    AuthUsers authUsers = new AuthUsers();
-    AssertsAuth assertsAuth = new AssertsAuth();
-    static UserData userData = new UserData();
-    static UsersRegistration usersRegistration = new UsersRegistration();
+    private final AuthUsers authUsers = new AuthUsers();
+    private final AssertsAuth assertsAuth = new AssertsAuth();
+    private final static UserData userData = new UserData();
+    private final static UsersRegistration usersRegistration = new UsersRegistration();
     private static ValidatableResponse authBaseUser;
     private Authentication auth;
     private static String userToken;
